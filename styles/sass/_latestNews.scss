@@ -1,0 +1,51 @@
+
+
+.latestNews {
+    background: #207200;
+}
+.latestNewsText {
+    color: #fff;
+    text-align: center;
+    padding-left: 174px; 
+    padding-right: 217px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.latestNewsText h2 {
+    text-transform: uppercase;
+    margin-top: 120px;
+
+}
+
+.latestNewsText p {
+    margin-top: 10px;
+}
+
+.departureBoxes {
+    display: flex; 
+    flex-direction: row;
+    padding: 20px;
+}
+
+.departureBoxes img {
+    width: 100%;
+}
+.departureBoxes p {
+    margin-top: 5px;
+
+}
+.departure1,
+.departure2,
+.departure3 { 
+    flex: 1;
+    margin: 10px;
+    margin-top: -15px;
+    margin-bottom: 50px;
+    background: #fff;
+    padding: 15px;
+    padding-bottom: 30px;
+
+}

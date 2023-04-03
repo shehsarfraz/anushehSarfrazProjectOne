@@ -1,0 +1,40 @@
+
+
+.linksAndCart ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;    
+
+
+    li {
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #1a2428;
+        font-size: 0.75rem; 
+        font-weight: 600;
+        margin: 13px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+
+.shoppingCart img {
+    width: 20px;
+    padding-top: 20px;
+    margin-left: 20px;
+}
+
+.linksAndCart {
+    display: flex;
+
+}

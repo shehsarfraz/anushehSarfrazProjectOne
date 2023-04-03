@@ -1,0 +1,47 @@
+
+
+.productsText {
+    text-align: center;
+    padding-left: 174px; 
+    padding-right: 217px;
+
+}
+
+.productsText h2 {
+    text-transform: uppercase;
+}
+
+.productsText p {
+    margin-top: 0px;
+}
+.productsRow1 {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.productsRow1 img {
+    width: 100%;
+}
+
+.veggie1,
+.veggie2 {
+    flex: 1;
+    margin: 10px;
+    border: 2px solid #f8f8f8;
+
+}
+
+.productsRow2 {
+    display: flex; 
+    flex-direction: row;
+}
+
+.productsRow2 img {
+    width: 100%;
+}
+
+.cost {
+    color: #207200;
+    font-weight: 600;
+}

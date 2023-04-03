@@ -1,0 +1,41 @@
+
+.contactBoxes {
+    display: flex;
+    flex-direction: column;
+
+}
+.contactBox1,
+.contactBox2,
+.contactBox3 { 
+    border-left: 5px solid #207200;
+    padding: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.065);
+    margin-bottom: 35px;
+
+}
+
+.contactForm input {
+    padding: 15px;
+    font-family: 'Barlow';
+    font-size: .75rem;
+}
+
+.contactBody {
+    display: flex;
+
+
+}
+
+.contactForm, 
+.contactBoxes {
+    flex: 1;
+    margin: 10px;
+
+}
+
+.contactForm {
+    padding: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.065);
+    margin-bottom: 35px;
+
+}

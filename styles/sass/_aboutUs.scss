@@ -1,0 +1,40 @@
+
+
+.aboutUsTotal {
+    display: flex;
+}
+
+.aboutUsText,
+.bestServices {    
+    flex: 1;
+}
+
+.aboutUsText h2 {
+    font-size: 1.75rem;
+    margin-top: 0px;
+}
+
+.aboutUsText h3 { 
+    font-size: .95rem;
+    margin-bottom: 10px;
+}
+.aboutUsText p {
+    font-size: .85rem;
+    line-height: 20px;
+}
+
+.bestServices {
+    background: #3b9617;
+    color: #fff;
+    padding: 50px 0px 50px 50px;
+    width: 50px;
+    margin-left: 80px;
+    border-radius: 25px;
+    font-size: 1rem;
+    line-height: 35px;
+}
+
+.aboutusTotal p {
+    align-self: center;
+    margin-top: 45px;
+}

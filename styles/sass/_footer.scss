@@ -1,0 +1,101 @@
+
+
+
+.bottomSectionBackground {
+    background: url(../assets/cow.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.bottomSection {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+
+.logo img {
+    width: 550px;
+    height: 500px;
+}
+
+.bottomAbout {
+    width: 250px;
+}
+
+.bottomAbout p {
+    line-height: 25px;
+}
+
+.links {
+    display: flex; 
+    flex-direction: column;
+    padding-left: 0px;
+
+}
+
+.quickLinks ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;    
+
+
+    li {
+        padding: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: #1a2428;
+        font-size: 1rem; 
+    }
+
+}
+
+.bottomAbout, 
+.quickLinks, 
+.recentProducts, 
+.subscribe {
+    flex: 1;
+}
+
+.recentProducts img {
+    width: 80px;
+    height: 80px;
+}
+
+.recentProducts {
+    display: flex; 
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.containerImage {
+    flex-basis: 40%;
+}
+
+.containerText, {
+    margin: 0px;
+}
+
+.containerTextCost {
+    color: #207200;
+    font-weight: 600;
+}
+
+.subscribe input {
+    padding: 15px;
+    font-family: 'Barlow';
+}
+
+.copyrightBackground {
+    background: #207200;
+}
+
+.copyright {
+    color: #fff;
+    align-self: center;
+}
