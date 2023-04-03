@@ -1,0 +1,68 @@
+
+
+@media (max-width: 500px) {
+    nav {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .headerFlexbox {
+        flex-direction: column;
+        width: 50%;
+    }
+
+
+    .headerText {
+        margin-bottom: 50px;
+    }
+
+    .headerImage {
+        margin-bottom: 50px;
+    }
+
+    .aboutUsTotal {
+        margin-top: 90px;
+        flex-wrap: wrap;
+    }
+
+    .bestServices {
+        visibility: hidden;
+    }
+    
+    .productsText {
+        margin-top: 80px;
+        padding: 0px;
+    }
+
+    .productsRow1,
+    .productsRow2,
+    .departureBoxes {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .topButtons {
+        width: 50%;
+        align-self: center;
+        flex-wrap: wrap;
+    }
+
+    .galleryFirstRow,
+    .gallerySecondRow,
+    .galleryThirdRow {
+        flex-wrap: wrap;
+    }
+
+    .latestNewsText {
+        padding-left: 115px;
+    }
+
+    .bottomSection {
+        flex-wrap: wrap;
+    }
+
+    .contactBody {
+        flex-wrap: wrap;
+    }
+}

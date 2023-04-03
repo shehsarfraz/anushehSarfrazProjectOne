@@ -317,10 +317,6 @@ nav {
   padding-bottom: 15px;
 }
 
-.contactHeader {
-  background: url(../assets/contact.jpg);
-}
-
 .bottomSectionBackground {
   background: url(../assets/cow.png);
   background-repeat: no-repeat;
@@ -511,6 +507,25 @@ nav {
 .wrapper5 p {
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+.wrapper6 {
+  max-width: 2000px;
+  width: 55%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .button1 {
@@ -727,7 +742,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 450px;
-  margin-bottom: -46px;
+  margin-bottom: 25px;
 }
 
 .galleryFirstRow,
@@ -823,6 +838,27 @@ nav {
   padding-bottom: 30px;
 }
 
+.contactHeader {
+  background: url(../assets/contact.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactHeaderText h1 {
+  font-family: "Lora";
+  color: #fff;
+}
+
+.contactHeaderText {
+  height: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
 .contactBoxes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -868,4 +904,77 @@ nav {
   -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.065);
           box-shadow: 0 3px 10px rgba(0, 0, 0, 0.065);
   margin-bottom: 35px;
+}
+
+@media (max-width: 500px) {
+  nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .headerFlexbox {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 50%;
+  }
+  .headerText {
+    margin-bottom: 50px;
+  }
+  .headerImage {
+    margin-bottom: 50px;
+  }
+  .aboutUsTotal {
+    margin-top: 90px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .bestServices {
+    visibility: hidden;
+  }
+  .productsText {
+    margin-top: 80px;
+    padding: 0px;
+  }
+  .productsRow1,
+  .productsRow2,
+  .departureBoxes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .topButtons {
+    width: 50%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .galleryFirstRow,
+  .gallerySecondRow,
+  .galleryThirdRow {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .latestNewsText {
+    padding-left: 115px;
+  }
+  .bottomSection {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contactBody {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }

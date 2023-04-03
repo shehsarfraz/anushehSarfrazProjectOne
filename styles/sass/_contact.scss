@@ -1,4 +1,24 @@
 
+
+
+.contactHeader {
+    background: url(../assets/contact.jpg);
+    background-size: cover; 
+    height: 400px;
+    margin-bottom: 40px;
+    display: flex;
+
+}
+
+.contactHeaderText h1 {
+    font-family: 'Lora';
+    color: #fff;
+
+}
+.contactHeaderText {
+    height: 100%;
+    align-self: center;
+}
 .contactBoxes {
     display: flex;
     flex-direction: column;
