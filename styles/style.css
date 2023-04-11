@@ -826,6 +826,12 @@ nav {
   background: #207200;
 }
 
+.latestNews button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
 .latestNewsText {
   color: #fff;
   text-align: center;

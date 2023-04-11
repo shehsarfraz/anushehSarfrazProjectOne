@@ -212,8 +212,10 @@
             <button class="button4">Read More</button>
             </div>
         </div>
+        <button class="button3" onclick="toTop()">Back to Top</button>
         </div>
     </section>
+    
 
     <!-- bottom section with contact info -->
 
@@ -328,5 +330,8 @@
         // event listener to listen for "click" and execute function 
         hamburger.addEventListener("click", toggleNav);
 
-        
+        // setting variable and function for scroll to top button 
+
+        const toTop = () => window.scrollTo({top: 0, behaviour: 'smooth'});
+
 </script>
