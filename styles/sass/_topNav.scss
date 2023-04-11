@@ -50,13 +50,14 @@ nav {
     list-style: none;
     padding: 20px;;
 
-    .navItem {
-        color: rgb(0, 0, 0);
-        font-size: 1rem;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-weight: 600;
-    }
+}
+
+.navItem {
+    color: #000000;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .topNavigation li { 
