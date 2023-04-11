@@ -280,6 +280,56 @@ nav {
   display: flex;
 }
 
+.topNavigation {
+  position: fixed;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: #207200;
+  border: #207200 2px solid;
+  list-style: none;
+  padding: 1rem;
+}
+.topNavigation .navItem {
+  color: white;
+  font-size: 1.25rem;
+  text-decoration: none;
+}
+
+.topNavigation li {
+  margin: 10px;
+}
+
+.showNav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 20px;
+  right: 20px;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+.hamburger .fa-solid {
+  display: block;
+}
+.hamburger .fa-regular {
+  display: none;
+}
+
 .homeHeader {
   background: url(../assets/header/background.png);
   background-size: cover;
@@ -930,7 +980,7 @@ nav {
     margin-bottom: 50px;
   }
   .headerImage {
-    margin-bottom: 50px;
+    display: none;
   }
   .aboutUsTotal {
     margin-top: 90px;
@@ -976,5 +1026,18 @@ nav {
   .contactBody {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media (max-width: 749px) {
+  .shoppingCart img {
+    display: none;
+  }
+  .linksAndCart ul {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
+  .hamburger {
+    display: none;
   }
 }

@@ -1,11 +1,15 @@
 
 
-@media (max-width: 500px) {
+@media (max-width: 500px) {    
+
+
     nav {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     }
+
 
     .headerFlexbox {
         flex-direction: column;
@@ -18,7 +22,7 @@
     }
 
     .headerImage {
-        margin-bottom: 50px;
+        display: none;
     }
 
     .aboutUsTotal {
@@ -64,5 +68,23 @@
 
     .contactBody {
         flex-wrap: wrap;
+    }
+
+
+}
+
+@media (max-width: 749px) {
+    
+    .shoppingCart img {
+        display: none;
+    }
+
+    .linksAndCart ul {
+        display: none;
+    }
+}
+@media (min-width: 750px) {
+    .hamburger {
+        display: none;
     }
 }

@@ -13,14 +13,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Lora:wght@500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/814a6b996f.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
 
     <!-- topNav -->
     <div class="wrapper">
-    <nav>
-        <img src="./assets/logo.png">
+        <nav>
+            <img src="./assets/logo.png">
             <div class="linksAndCart">
                 <ul>
                     <li><a href="./index.html">Home</a></li>
@@ -28,10 +29,19 @@
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
                 <div class="shoppingCart">
-                <img src="./assets/icons/cart.svg">
-            </div>
+                    <img src="./assets/icons/cart.svg">
+                </div>
             </div>
         </nav>
+        <ul class="topNavigation">
+            <li><a class="navItem" href="#">Home</a></li>
+            <li><a class="navItem" href="#">Blog</a></li>
+            <li><a class="navItem" href="./contact.html">Contact Us</a></li>
+        </ul>
+        <button class="hamburger">
+            <i class="fa-solid fa-bars fa-2x"></i>
+            <i class="fa-regular fa-rectangle-xmark fa-2x"></i>
+        </button>
     </div>
     <!-- header section -->
 
@@ -288,3 +298,35 @@
 
 </body>
 </html>
+
+<script>
+
+        // assign variables to each section of hamburger menu so we can toggle showing them on the page 
+        const topNavigation = document.querySelector(".topNavigation");
+        const navItems = document.querySelectorAll(".navItem");
+        const hamburger = document.querySelector(".hamburger");
+
+        // assign variables to each icon for hamburger and closing hamburger
+        const hamburgerOpen = document.querySelector(".fa-solid")
+        const hamburgerClosed = document.querySelector(".fa-regular");
+
+        // function that will toggle the empty class we added that has transform property on it to move the animation back and forth on "click" and will show the appropriate icon depending on the state of the list showing or not
+        function toggleNav() {
+        if (topNavigation.classList.contains("showNav")) {
+            topNavigation.classList.remove("showNav");
+            hamburgerClosed.style.display = "none";
+            hamburgerOpen.style.display = "block";
+
+        } else {
+
+            topNavigation.classList.add("showNav");
+            hamburgerClosed.style.display = "block";
+            hamburgerOpen.style.display = "none";
+        }
+    }
+
+        // event listener to listen for "click" and execute function 
+        hamburger.addEventListener("click", toggleNav);
+
+        
+</script>
