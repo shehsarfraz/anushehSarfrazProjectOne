@@ -280,6 +280,59 @@ nav {
   display: flex;
 }
 
+.topNavigation {
+  position: fixed;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  top: 0;
+  left: 5;
+  right: 0;
+  bottom: 2;
+  z-index: 99;
+  background: #ffffff;
+  list-style: none;
+  padding: 20px;
+}
+
+.navItem {
+  color: #000000;
+  font-size: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.topNavigation li {
+  margin: 10px;
+}
+
+.showNav {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.hamburger {
+  position: fixed;
+  z-index: 100;
+  top: 25px;
+  right: 15px;
+  padding: 4px;
+  border: black solid 1px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+.hamburger .fa-solid {
+  display: block;
+}
+.hamburger .fa-regular {
+  display: none;
+}
+
 .homeHeader {
   background: url(../assets/header/background.png);
   background-size: cover;
@@ -776,6 +829,12 @@ nav {
   background: #207200;
 }
 
+.latestNews button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
 .latestNewsText {
   color: #fff;
   text-align: center;
@@ -930,7 +989,7 @@ nav {
     margin-bottom: 50px;
   }
   .headerImage {
-    margin-bottom: 50px;
+    display: none;
   }
   .aboutUsTotal {
     margin-top: 90px;
@@ -976,5 +1035,18 @@ nav {
   .contactBody {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+@media (max-width: 749px) {
+  .shoppingCart img {
+    display: none;
+  }
+  .linksAndCart ul {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
+  .hamburger {
+    display: none;
   }
 }
